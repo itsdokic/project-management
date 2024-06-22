@@ -1,7 +1,7 @@
 # Project Management Web Application
 
 **An application developed as part of my studies.**  
-A project management web application enables teams and organizations to efficiently plan, track, and execute projects. Key functionalities of the application include:
+A Project Management Web Application enables teams and organizations to efficiently plan, track, and execute projects. Key functionalities of the application include:
 - **Project Management:** Creating projects, assigning managers, deleting, editing, etc.
 - **Task Management:** Creating, assigning, and tracking tasks within a project, with the ability to set deadlines, delete, edit, etc.
 - **Work Tracking:** Accessing data on working hours for each employee.
