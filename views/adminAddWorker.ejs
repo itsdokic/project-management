@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Add worker - Project management</title>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@4.0.0/build/cjs/index.min.js"></script>
+    <script src="/javascripts/authenticateAdmin.js"></script>
+
+    <link rel="icon" href="/images/tab-logo.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5cca7320c3.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/adminAddWorker.css' />
+  </head>
+  <body>
+
+    <ul id="sidebar">
+      <li id="logo_place"><img id="logo" src="/images/logo-white.png"></li>
+      <li><a id="sidebar_list" onclick="location.assign('/admin/projects')"><ion-icon id="icons" name="folder-outline"></ion-icon> Projekti</a></li>
+      <li><a id="sidebar_list_active" ><ion-icon id="active_icon" name="caret-forward-outline"></ion-icon>
+          <ion-icon id="icons" name="people-outline"></ion-icon> Radnici</a></li>
+      <li><a id="sidebar_list" onclick="location.assign('/admin/tasks')"><ion-icon id="task_icon" name="list-outline"></ion-icon> Taskovi</a></li>
+      <li><a id="sidebar_list" onclick="location.assign('/admin/logs')"><ion-icon id="logs_icon" name="time-outline"></ion-icon> Logovi</a></li>
+      <li><hr id="sidebar_line"></li>
+      <li><a id="sidebar_list" onclick="logout()"><ion-icon id="logout_icon" name="log-out-outline"></ion-icon> Log out</a></li>
+    </ul>
+
+    <nav id="navbar" class="navbar navbar-default">
+      <div id="navbar_div" class="container-fluid">
+        <ul id="add_ul" class="nav navbar-nav navbar-left">
+          <li><button onclick="location.assign('/admin/workers')" id="back_button" class="btn btn-default"> Natrag</button></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a><ion-icon onclick="location.assign('/admin/user')" id="user_icon" name="person-circle-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="form" class="container">
+      <p id="form_header">Novi radnik</p>
+      <form id="form_inputs">
+        <div class="form-group">
+          <label for="first_name">Ime:</label>
+          <input style="font-size: 17px" type="text" class="form-control" id="first_name" placeholder="Unesite ime radnika" name="first_name">
+        </div>
+        <div class="form-group">
+          <label for="last_name">Prezime:</label>
+          <input style="font-size: 17px" type="text" class="form-control" id="last_name" placeholder="Unesite prezime radnika" name="last_name">
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input style="font-size: 17px" type="email" class="form-control" id="email" placeholder="Unesite email radnika" name="email">
+        </div>
+        <div class="form-group">
+          <label for="number">Broj telefona:</label>
+          <input style="font-size: 17px" type="text" class="form-control" id="number" placeholder="Unesite broj telefona radnika" name="number">
+        </div>
+        <div class="form-group">
+          <label for="gender">Odaberite spol radnika:</label>
+          <br>
+          <select name="gender" id="gender">
+            <option value="" selected disabled hidden>- - - - - - - -</option>
+            <option value="Muško">Muško</option>
+            <option value="Žensko">Žensko</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input style="font-size: 17px" type="password" class="form-control" id="password" placeholder="Unesite password radnika" name="password">
+        </div>
+        <button id="submit_button" type="submit" class="btn btn-default">Dodaj radnika</button>
+      </form>
+    </div>
+
+    <script src="/javascripts/adminAddWorker.js"></script>
+    <script src="/javascripts/logout.js"></script>
+
+  </body>
+</html>

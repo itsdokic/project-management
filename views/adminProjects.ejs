@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects - Project management</title>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@4.0.0/build/cjs/index.min.js"></script>
+    <script src="/javascripts/authenticateAdmin.js"></script>
+
+    <link rel="icon" href="/images/tab-logo.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5cca7320c3.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/adminProjects.css'/>
+  </head>
+  <body>
+
+    <ul id="sidebar">
+      <li id="logo_place"><img id="logo" src="/images/logo-white.png"></li>
+      <li><a id="sidebar_list_active"><ion-icon id="active_icon" name="caret-forward-outline"></ion-icon>
+          <ion-icon id="icons" name="folder-outline"></ion-icon> Projekti</a></li>
+      <li><a id="sidebar_list" onclick="location.assign('/admin/workers')"><ion-icon id="icons" name="people-outline"></ion-icon> Radnici</a></li>
+      <li><a id="sidebar_list" onclick="location.assign('/admin/tasks')"><ion-icon id="task_icon" name="list-outline"></ion-icon> Taskovi</a></li>
+      <li><a id="sidebar_list" onclick="location.assign('/admin/logs')"><ion-icon id="logs_icon" name="time-outline"></ion-icon> Logovi</a></li>
+      <li><hr id="sidebar_line"></li>
+      <li><a id="sidebar_list" onclick="logout()"><ion-icon id="logout_icon" name="log-out-outline"></ion-icon> Log out</a></li>
+    </ul>
+
+    <nav id="navbar" class="navbar navbar-default">
+      <div id="navbar_div" class="container-fluid">
+        <ul id="add_ul" class="nav navbar-nav navbar-left">
+          <li><button onclick="location.assign('/admin/projects/addProject')" id="add_button" class="btn btn-default">+ Dodaj projekat</button></li>
+        </ul>
+        <form id="search_form" class="navbar-form navbar-left" onsubmit="searchProjects(event)">
+          <div id="search_div" class="form-group">
+            <ion-icon id="search_icon" name="search-outline"></ion-icon>
+            <input type="text" id="search_input" class="form-control" placeholder="Pretraži" name="search">
+          </div>
+        </form>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a><ion-icon onclick="location.assign('/admin/user')" id="user_icon" name="person-circle-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div style="overflow-x:auto;" id="table_div">
+        <table id="projects">
+          <tr>
+            <th style="border-radius: 10px 0 0 0">ID</th>
+            <th>Naziv</th>
+            <th>Startni datum</th>
+            <th>Završni datum</th>
+            <th>Menadžer</th>
+            <th>Opis</th>
+            <th style="width: 20%; border-radius: 0 10px 0 0"></th>
+          </tr>
+        </table>
+    </div>
+
+    <button onclick="createPDF()" id="pdf_button" class="btn btn-default">Kreiraj izvještaj u PDF formatu</button>
+
+    <script src="/javascripts/projects.js"></script>
+    <script src="/javascripts/logout.js"></script>
+
+  </body>
+</html>

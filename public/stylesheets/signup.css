@@ -1,0 +1,88 @@
+#body {
+    background-color: whitesmoke;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+#navbar {
+    background-color: whitesmoke;
+    border: 0px;
+    margin-top: 20px;
+}
+
+#logo {
+    width: 312px;
+    height: 72px;
+}
+
+#login_button {
+    color: #333333;
+    background-color: white;
+    font-family: 'Lexend Deca';
+    text-align: center;
+    position: relative;
+    margin-top: 10px;
+    width: 100px;
+    left: 20px;
+    border-radius: 25px 0 0 25px;
+}
+
+#signup_button {
+    color: #333333;
+    font-family: 'Lexend Deca';
+    text-align: center;
+    background-color: #fcb96d;
+    position: relative;
+    margin-top: 10px;
+    width: 100px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+#login_button:hover {
+    background-color: #faaf5a;
+}
+
+#signup_button:hover {
+    background-color: #faaf5a;
+}
+
+#form {
+    background-color: white;
+    width: 600px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px -2px #d6d4d4;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#signup_header {
+    font-family: 'Lexend Deca';
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+#form_inputs {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: 'Lexend Deca';
+}
+
+#error {
+    color: red;
+}
+
+#submit_button {
+    background-color: #fcb96d;
+    border-radius: 20px;
+    border: 0px;
+    width: 85.28px;
+    height: 42px;
+    margin-top: 20px;
+}
+
+#submit_button:hover {
+    background-color: #faaf5a;
+}

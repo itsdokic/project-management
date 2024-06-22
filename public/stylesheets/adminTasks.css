@@ -1,0 +1,318 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+#sidebar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #1c122b;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#logo_place {
+    text-align: center;
+}
+
+#logo {
+    width: 80%;
+    height: 60px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#icons {
+    margin-right: 15px;
+    vertical-align: -5px;
+    font-size: 30px;
+}
+
+#task_icon {
+    margin-right: 15px;
+    vertical-align: -8px;
+    font-size: 30px;
+}
+
+#logs_icon {
+    margin-right: 15px;
+    vertical-align: -7px;
+    font-size: 30px;
+}
+
+#sidebar_list_active {
+    display: block;
+    color: #faaf5a;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    margin-left: 0;
+}
+
+#active_icon {
+    margin-right: 5px;
+}
+
+#sidebar_list_active:hover {
+    color: #fca43f;
+}
+
+#sidebar_list {
+    display: block;
+    color: #ECE7DA;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#sidebar_list:hover {
+    color: #faaf5a;
+    cursor: pointer;
+}
+
+#sidebar_line {
+    background-color: #e3e3e3;
+    height: 1px;
+    width: 80%;
+    margin-top: 95%;
+}
+
+#logout_icon {
+    margin-right: 15px;
+    vertical-align: -7.5px;
+    font-size: 30px;
+}
+
+
+#navbar {
+    background-color: whitesmoke;
+    border: 0;
+    margin-left: 20%;
+}
+
+#add_button {
+    color: #ffffff;
+    background-color: #26ff26;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    margin-top: 19px;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+#add_button:hover {
+    transition: 0.5s;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#search_form {
+    width: 60%;
+    margin-left: 10%;
+}
+
+#search_div {
+    background-color: whitesmoke;
+    border-radius: 20px;
+    border: solid;
+    border-color: #333333;
+    border-width: 1px;
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    font-family: 'Lexend Deca';
+}
+
+#search_icon {
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 25px;
+}
+
+#search_input {
+    border: none;
+    background-color: whitesmoke;
+    margin-top: 2px;
+    height: 90%;
+    width: 90%;
+    vertical-align: middle;
+    box-shadow: none;
+    font-size: 18px;
+}
+
+#search_input:focus {
+    outline: none;
+    box-shadow: none;
+    border: none;
+}
+
+#user_icon {
+    font-size: 60px;
+    color: black;
+    margin-right: 40px;
+}
+
+#user_icon:hover {
+    color: #faaf5a;
+    cursor: pointer;
+}
+
+
+
+table {
+    margin-left: 31%;
+    background-color: white;
+    border-radius: 10px;
+    width: 60%;
+}
+
+th {
+    background-color: #f5f100;
+    padding: 15px;
+    padding-left: 20px;
+    font-size: 16px;
+    font-size: 18px;
+}
+
+table td {
+    padding-left: 20px;
+    padding-right: 15px;
+    font-family: 'Lexend Deca';
+    font-size: 17px;
+    line-height: 40px;
+}
+
+
+table tr:hover {
+    background-color: #dedede;
+    .active_edit_button {
+        background-color: #dedede;
+    }
+    .late_edit_button {
+        background-color: #dedede;
+    }
+    .finished_edit_button {
+        background-color: #dedede;
+    }
+    .active_delete_button {
+        background-color: #dedede;
+    }
+    .late_delete_button {
+        background-color: #dedede;
+    }
+    .finished_delete_button {
+        background-color: #dedede;
+    }
+}
+
+.active {
+    background-color: yellow;
+}
+
+.late {
+    background-color: red;
+}
+
+.finished {
+    background-color: #26ff26;
+}
+
+.active_edit_button {
+    padding: 0;
+    margin-left: 70px;
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    border: none;
+}
+
+.late_edit_button {
+    padding: 0;
+    margin-left: 70px;
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border: none;
+}
+
+.finished_edit_button {
+    padding: 0;
+    margin-left: 70px;
+    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    background-color: #26ff26;
+    border: none;
+}
+
+.edit_icon {
+    height: 100%;
+    width: 100%;
+    color: #2b2b2b;
+}
+
+.edit_icon:hover {
+    color: black;
+}
+
+.active_delete_button {
+    padding: 0;
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: yellow;
+    border: none;
+}
+
+.late_delete_button {
+    padding: 0;
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: red;
+    border: none;
+}
+
+.finished_delete_button {
+    padding: 0;
+    margin-left: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: #26ff26;
+    border: none;
+}
+
+.delete_icon {
+    height: 100%;
+    width: 100%;
+    color: #e30000;
+}
+
+.delete_icon:hover {
+    color: #bf0404;
+}
+
+.late_delete_icon {
+    height: 100%;
+    width: 100%;
+    color: #a40000;
+}
+
+.late_delete_icon:hover {
+    color: #bf0404;
+}
+
+
+
+td:nth-child(1) {
+    text-align: center;
+}

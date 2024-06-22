@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project - Project management</title>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@4.0.0/build/cjs/index.min.js"></script>
+    <script src="/javascripts/authenticateWorker.js"></script>
+
+    <link rel="icon" href="/images/tab-logo.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Lexend Deca' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/5cca7320c3.js" crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/workerProject.css' />
+  </head>
+  <body>
+
+    <ul id="sidebar">
+      <li id="logo_place"><img id="logo" src="/images/logo-white.png"></li>
+      <li><a id="sidebar_list_active"><ion-icon id="active_icon" name="caret-forward-outline"></ion-icon>
+          <ion-icon id="icons" name="folder-outline"></ion-icon> Projekat</a></li>
+      <li><a id="sidebar_list" onclick="location.assign('/worker/tasks')"><ion-icon id="task_icon" name="list-outline"></ion-icon> Taskovi</a></li>
+      <li><a id="sidebar_list" onclick="location.assign('/worker/workHours')"><ion-icon id="work_icon" name="code-slash-outline"></ion-icon></ion-icon> Radno vrijeme</a></li>
+      <li><hr id="sidebar_line"></li>
+      <li><a id="sidebar_list" onclick="logout()"><ion-icon id="logout_icon" name="log-out-outline"></ion-icon> Log out</a></li>
+    </ul>
+
+    <nav id="navbar" class="navbar navbar-default">
+      <div id="navbar_div" class="container-fluid">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a><ion-icon onclick="location.assign('/worker/user')" id="user_icon" name="person-circle-outline"></ion-icon></a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="project_div">
+      <div id="title_div"><h1 style="color: yellow" id="label">Projekat: </h1><h1 id="title"></h1></div>
+      <div><p id="label">ID: </p><p id="id"></p></div>
+      <div><p id="label">Startni datum: </p><p id="start_date"></p></div>
+      <div><p id="label">Završni datum: </p><p id="end_date"></p></div>
+      <div><p id="label">Menadžer: </p><p id="manager"></p></div>
+      <div><p id="label">Opis: </p><p id="description"></p></div>
+    </div>
+
+    <script src="/javascripts/workerProject.js"></script>
+    <script src="/javascripts/logout.js"></script>
+
+  </body>
+</html>

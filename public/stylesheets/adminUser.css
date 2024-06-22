@@ -1,0 +1,172 @@
+body {
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+#sidebar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    background-color: #1c122b;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#logo_place {
+    text-align: center;
+}
+
+#logo {
+    width: 80%;
+    height: 60px;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+#icons {
+    margin-right: 15px;
+    vertical-align: -5px;
+    font-size: 30px;
+}
+
+#task_icon {
+    margin-right: 15px;
+    vertical-align: -8px;
+    font-size: 30px;
+}
+
+#logs_icon {
+    margin-right: 15px;
+    vertical-align: -7px;
+    font-size: 30px;
+}
+
+#sidebar_list_active {
+    display: block;
+    color: #faaf5a;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    margin-left: 0;
+}
+
+#active_icon {
+    margin-right: 5px;
+}
+
+#sidebar_list_active:hover {
+    color: #fca43f;
+}
+
+#sidebar_list {
+    display: block;
+    color: #ECE7DA;
+    padding: 15px 16px;
+    text-decoration: none;
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+#sidebar_list:hover {
+    color: #faaf5a;
+    cursor: pointer;
+}
+
+#sidebar_line {
+    background-color: #e3e3e3;
+    height: 1px;
+    width: 80%;
+    margin-top: 95%;
+}
+
+#logout_icon {
+    margin-right: 15px;
+    vertical-align: -7.5px;
+    font-size: 30px;
+}
+
+#navbar {
+    background-color: whitesmoke;
+    border: 0;
+    margin-left: 20%;
+}
+
+#back_button {
+    color: #ffffff;
+    background-color: #ff0000;
+    border-radius: 10px;
+    height: 45px;
+    width: 150px;
+    margin-top: 19px;
+    margin-left: 10%;
+    font-weight: bold;
+}
+
+#back_button:hover {
+    transition: 0.5s;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#user_icon {
+    font-size: 60px;
+    color: #faaf5a;
+    margin-right: 40px;
+}
+
+#user_icon:hover {
+    cursor: auto;
+}
+
+#user_div {
+    background-color: white;
+    width: 60%;
+    height: 630px;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 30%;
+    font-size: 25px;
+    font-family: 'Lexend Deca';
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 6%;
+    font-weight: bold;
+}
+
+#user_div div {
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#user_div div p {
+    display: inline;
+    margin-right: 20px;
+}
+
+#label {
+    font-weight: bold;
+}
+
+#edit_button {
+    background-color: #f5f100;
+    border-radius: 20px;
+    border: 0;
+    width: 50%;
+    height: 42px;
+    margin-top: 50px;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+#edit_button:hover {
+    background-color: #e7e200;
+}
